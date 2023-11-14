@@ -42,7 +42,7 @@ export const PinchZoom: React.FC<{
 
         const target = e.target as HTMLElement;
         const rect = target.getBoundingClientRect();
-        const scaleDiff = 1 - e.deltaY / 100;
+        const scaleDiff = 1 - e.deltaY / 1000;
         const originX = e.clientX - rect.left;
         const originY = e.clientY - rect.top;
 
